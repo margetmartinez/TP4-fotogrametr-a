@@ -1,9 +1,7 @@
-# TP4-fotogrametr-a
-```
-//Compare la cobertura de validación contra los datos de los resultados de la clasificacion
-var testAccuracy = validation.errorMatrix('landcover', 'classification');
-//Imprimir la matriz de confusión en la consula
-print('Validation error matrix: ', testAccuracy);
-//Imprimir la presición general en la consola
-print('Validation overall accuracy: ', testAccuracy.accuracy());
-```
+# TP4 Fotogrametría y Teledetección
+## Elaborado por: Daniela Amador y Marget Martínez
+
+# Parte teórica
+
+# Parte práctica
+Código proveniente de Google Earth Engine
