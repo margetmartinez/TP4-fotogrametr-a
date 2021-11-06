@@ -7,7 +7,7 @@
 Código proveniente de Google Earth Engine
 
 ´´´
-Código con el clasificador smileCart
+//Código con el clasificador smileCart
 
 //Filtros y fechas
 var image = ee.Image(ee.ImageCollection('LANDSAT/LC08/C01/T1_SR')
