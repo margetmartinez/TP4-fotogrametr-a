@@ -58,6 +58,7 @@ print(Chart2);
 
 ```
 ![image](https://github.com/margetmartinez/TP4-fotogrametr-a/blob/main/grafic2.jpeg)
+![image](https://github.com/margetmartinez/TP4-fotogrametr-a/blob/main/grafico.jpeg)
 
 # Clasificador smileCart
 
