@@ -57,6 +57,7 @@ var Chart2 = ui.Chart.image.regions(
 print(Chart2);
 
 ```
+![image](https://github.com/margetmartinez/TP4-fotogrametr-a/blob/main/grafic2.jpeg)
 
 # Clasificador smileCart
 
