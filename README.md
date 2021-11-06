@@ -1,10 +1,64 @@
 # TP4 Fotogrametría y Teledetección
 ## Elaborado por: Daniela Amador y Marget Martínez
 
-# Parte teórica
+# Firmas espectrales
 
-# Parte práctica
-Código proveniente de Google Earth Engine
+```
+//Filtros y fechas
+var image = ee.Image(ee.ImageCollection('LANDSAT/LC08/C01/T1_SR')
+    .filterBounds(roi)
+    .filterDate('2020-01-01', '2020-02-15')
+    .sort('CLOUD_COVER')
+    .first());
+    
+//Composición color verdadero
+Map.addLayer(image, {bands: ['B4', 'B3', 'B2'],min:0, max: 3000}, 'True colour image');
+Map.addLayer(tempisque,{color:"2bbc69"},"Tempisque");
+
+//Bandas de análisis, y feature collection.
+var subset = image.select('B[1-7]')
+var samples = ee.FeatureCollection([Bosque, Cultivo, Cuerpos_Agua, Suelo_Desnudo, Nubes, Urbano, Sombra_Nube]);
+
+//Gráfico 1
+var Chart1 = ui.Chart.image.regions(
+ subset, samples, ee.Reducer.mean(), 10, 'etiqueta')
+ .setChartType('ScatterChart');
+
+//Desplegar gráfico
+print(Chart1)
+
+//Opciones de personalizado
+var plotOptions = {
+ title: 'Landsat-8 Surface reflectance spectra',
+ hAxis: {title: 'Wavelength (nanometers)'},
+ vAxis: {title: 'Reflectance'},
+ lineWidth: 1,
+ pointSize: 6,
+ series: {
+ 0: {color: 'green'}, // Bosques
+ 1: {color: 'orange'}, // Cultivo
+ 2: {color: 'blue'}, //Cuerpos agua
+ 3: {color: 'brown'}, // Suelo_desnudo
+ 4: {color: 'purple'}, // Nubes
+ 5: {color: 'gray'}, // Urbano
+ 6: {color: 'black'}, // Sombra_nube
+}};
+
+//*Lista de longitudes de onda Landsat-8 para las etiquetas del eje X. Esto ser revisa en los metadatos de la colección*//
+var wavelengths = [443, 482, 562, 655, 865, 1609, 2201];
+
+// Gráfico 2 
+var Chart2 = ui.Chart.image.regions(
+ subset, samples, ee.Reducer.mean(), 10, 'etiqueta', wavelengths)
+ .setChartType('ScatterChart')
+ .setOptions(plotOptions);
+ 
+// Desplegar gráfico
+print(Chart2);
+
+```
+
+# Clasificador smileCart
 
 ```
 //Código con el clasificador smileCart
