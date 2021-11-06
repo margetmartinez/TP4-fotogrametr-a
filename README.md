@@ -60,13 +60,11 @@ print(Chart2);
 ![image](https://github.com/margetmartinez/TP4-fotogrametr-a/blob/main/grafic2.jpeg)
 ![image](https://github.com/margetmartinez/TP4-fotogrametr-a/blob/main/grafico.jpeg)
 
-De acuerdo al gráfico "Landsat-8 Surface reflectance espectra, las clases "Sombra_Nube", "Bosque", "Cultivo" y "Urbano" presentan mayor absorción de longitud de onda que las demás variables entre los 500 y 750 nanómetros. Lo que indica que la banda roja es donde presentan una mayor absorción. Luego se puede observar como todas las clases aumentan su reflectancia (presentando los valores más grandes), justo en la banda de infrarrojo cercano, entre los 750 y 1000 nanómetros. La reflectancia vuelve a bajar para todas las clases en la banda infrarroja de onda corta 1 (1500-1750 nm), a excepción del "Suelo_Desnudo" que aumenta ligeramente. Por último, todas las clases bajan en la banda de infrarrojo de onda corta 2. 
+De acuerdo al gráfico "Landsat-8 Surface reflectance espectra, las clases "Sombra_Nube", "Bosque", "Cultivo" y "Urbano" presentan mayor absorción de longitud de onda que las demás variables entre los 500 y 750 nanómetros. Lo que indica que la banda roja es donde presentan una mayor absorción. Luego se puede observar como todas las clases aumentan su reflectancia (presentando los valores más grandes), justo en la banda de infrarrojo cercano, entre los 750 y 1000 nanómetros. La reflectancia vuelve a bajar para todas las clases en la banda infrarroja de onda corta 1 (1500-1750 nm), a excepción del "Suelo_Desnudo" que aumenta ligeramente. Por último, todas las clases bajan en la banda de infrarrojo de onda corta 2. En este caso, las clases que manejan una menor distorción son "Sombra_Nubes" y "Cuerpos_Agua".
 
 # Clasificador smileCart
 
 ```
-//Código con el clasificador smileCart
-
 //Filtros y fechas
 var image = ee.Image(ee.ImageCollection('LANDSAT/LC08/C01/T1_SR')
     .filterBounds(roi)
@@ -132,4 +130,72 @@ print('Validación de error matrix: ', testAccuracy);
 //
 print('Validación de precisión general: ', testAccuracy.accuracy());
 
+```
+#Clasificador randomForest
+
+```
+//Filtros y fechas
+var image = ee.Image(ee.ImageCollection('LANDSAT/LC08/C01/T1_SR')
+    .filterBounds(roi)
+    .filterDate('2020-01-01', '2020-02-15')
+    .sort('CLOUD_COVER')
+    .first());
+
+Map.addLayer(image, {bands: ['B4', 'B3', 'B2'],min:0, max: 3000}, 'True colour image');
+Map.addLayer(tempisque,{color:"2bbc69"},"Tempisque");
+
+//Unión de clases
+var classNames = Bosque.merge(Cuerposagua).merge(Cultivo).merge(Suelodesnudo).merge(Nubes).merge(Urbano).merge(Sombranube);
+print(classNames);
+
+//Valores de reflectancia
+var bands = ['B2', 'B3', 'B4', 'B5', 'B6', 'B7'];
+
+//Selección de bandas y propiedades
+var training = image.select(bands).sampleRegions({
+  collection: classNames,
+  properties: ['landcover'],
+  scale: 30
+});
+print(training);
+
+// Algoritmo de clasificación. 
+var classifier = ee.Classifier.smileRandomForest(7).train({
+  features: training,
+  classProperty: 'landcover', 
+  inputProperties: bands
+});
+
+//Correr clasificación
+var classified = image.select(bands).classify(classifier);
+var final= classified.clip(tempisque);
+
+//Imprimir clasificación
+Map.centerObject(classNames, 11);
+Map.addLayer(final,
+{min: 0, max: 6, palette: ['green', 'orange', 'blue','brown','white','gray', "black"]},
+'classification');
+
+Código Matriz Confusión
+
+//Matriz de confusión
+
+var valNames = vbosque.merge(vBodyWater).merge(vcultivo).merge(vSueloDesnudo).merge(vNubes).merge(vUrban).merge(vSombras_Nubes);
+
+//
+var validation = classified.sampleRegions({
+  collection: valNames,
+  properties: ['landcover'],
+  scale: 30,
+});
+print(validation);
+
+//
+var testAccuracy = validation.errorMatrix('landcover', 'classification');
+
+//
+print('Validación de error matrix: ', testAccuracy);
+
+//
+print('Validación de precisión general: ', testAccuracy.accuracy());
 ```
