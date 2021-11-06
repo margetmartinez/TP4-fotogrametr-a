@@ -6,7 +6,7 @@
 # Parte práctica
 Código proveniente de Google Earth Engine
 
-´´´
+```
 //Código con el clasificador smileCart
 
 //Filtros y fechas
@@ -74,4 +74,4 @@ print('Validación de error matrix: ', testAccuracy);
 //
 print('Validación de precisión general: ', testAccuracy.accuracy());
 
-´´´
+```
