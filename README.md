@@ -220,6 +220,7 @@ Validación de precisión general: 1
 Validación de precisión general: 0.996328350380278
 
 ##  Síntesis de ambas
+Las matrices de confusión, según lo visto en clase, nos permiten conocer que tan preciso es un modelo de clasificación. Bajo esta lógica, al analizar ambas matrices el smileCart es el que muestra una mejor clasificación porque no ha confundido ninguna clase. Esto se ve reflejado, también, en el valor de validación con un 100% de precisión general. Sin embargo, el valor de validación para la matriz del clasificador randomForest es también alto, con un 99% de precisión general. 
 
 # Mapas finales
 
