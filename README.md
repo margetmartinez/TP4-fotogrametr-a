@@ -224,7 +224,12 @@ Por otro lado, el clasificador RandomForest es un método que se encarga tanto d
 Este algoritmo es capaz de manejar grandes cantidades de datos, además de poder manejar gran cantidad de variables, las cuales puede clasificarlas entre las más significativas para poder reducir su dimensionalidad. Por otro lado, también puede clasificar la importancia de la variable. También es muy efectivo debido al hecho de que mantiene la precisión cuando faltan muchos datos (Gonzalez, 2018).
 
 ## smileCart vs randomForest
-sdfwefw
+Realizando una comparación entre el resultado final obtenido de cada clasificador, lo primero que resalta en la imágen obtenida son las diferencias en la clasificación. Principalmente en la clase de “Suelos desnudos”. En el SmileCart hay un mayor número de suelo identificado como suelo desnudo. Contrario a lo que sucede con la clasificación de RandomForest. En donde el primer clasificador identifica suelo desnudo, el RandonForest identifica cultivos o zonas urbanas. 
+
+En cuanto a estas zonas urbanas, el SmileCart las identifica con una mayor precisión que el RandomForest, que como se mencionó con anterioridad, las confunde con suelos desnudos principalmente. Por otro lado, también se observan diferencias en cuanto a los cuerpos de agua, puesto que el SmileCart en este caso detecta mucho más los cuerpos de agua. Mientras que el RandomForest muestra más fácilmente las zonas boscosas y las zonas de cultivo.
+
+Si comparamos y contrastamos ambos clasificadores con la imagen Landsat 8 (base para los puntos de entrenamiento) la clasificación que muestra más coincidencias es el SmileCart. Lo que coincide con la matriz de confusión, cuyo valor de precisión general fue de 1 o un 100%.
+
 
 ## Matrices 
 
