@@ -12,7 +12,7 @@ Y las Clasificaciones Supervisadas, parten de un conjunto de clases conocidas pr
 Ambas son muy útiles en el área de la teledetección, ya que estos algoritmos permiten modelar complejas firmas de clases. Por otro lado, permiten analizar una mayor cantidad de datos para poder realizar las predicciones y no suelen realizar suposiciones sobre la distribución de los datos. Son de gran utilidad debido a la gran precisión que tienen en comparación con clasificadores tradicionales, aún más cuando se trabaja con gran cantidad de variables. Este muestra un mayor dominio de paquetes de software de procesamiento de imágenes satelitales, mientras que los métodos convencionales necesitan un mayor desarrollo de software y capacitación.
 
 
-## Firmas Espectrales
+## Firmas espectrales
 
 ```
 //Filtros y fechas
@@ -118,7 +118,7 @@ Map.addLayer(final,
 'classification');
 
 
-Código Matriz de Confusión
+#### Código Matriz de Confusión
 
 //Matriz Confusión
 
@@ -211,7 +211,7 @@ print('Validación de error matrix: ', testAccuracy);
 print('Validación de precisión general: ', testAccuracy.accuracy());
 ```
 
-## Descripción de los Clasificadores
+## Descripción de los clasificadores
 
 ### 1. SmileCart
 El clasificador smileCart forma parte del grupo llamado Classification and Regression Trees o CART, conocidos en español como Árboles de Clasificación y Decisión. Estos son algoritmos de árbol de decisión que se usan para problemas de modelado predictivo de clasificación o regresión. Este proporciona una base para algoritmos importantes como árboles de decisión empaquetados, bosque aleatorio y árboles de decisión potenciados. Para representar este modelo se usa un árbol binario. Para crear un modelo CART se deben seleccionar variables de entrada y puntos de división en esas variables hasta que se construya un árbol adecuado (Brownlee, 2006). 
@@ -223,7 +223,7 @@ Por otro lado, el clasificador RandomForest es un método que se encarga tanto d
 
 Este algoritmo es capaz de manejar grandes cantidades de datos, además de poder manejar gran cantidad de variables, las cuales puede clasificarlas entre las más significativas para poder reducir su dimensionalidad. Por otro lado, también puede clasificar la importancia de la variable. También es muy efectivo debido al hecho de que mantiene la precisión cuando faltan muchos datos (Gonzalez, 2018).
 
-## SmileCart vs RandomForest
+## smileCart vs randomForest
 - Realizando una comparación entre el resultado final obtenido de cada clasificador, lo primero que resalta en la imágen obtenida son las diferencias en la clasificación. Principalmente en la clase de *Suelos desnudos*. En el SmileCart hay un mayor número de terreno identificado como suelo desnudo. Contrario a lo que sucede con la clasificación del RandomForest. En donde el primer clasificador identifica suelo desnudo, el RandonForest identifica cultivos o zonas urbanas. 
 
 - En cuanto a estas zonas urbanas, el SmileCart las identifica con una mayor precisión que el RandomForest, que como se mencionó con anterioridad, las confunde con suelos desnudos principalmente. Por otro lado, también se observan diferencias en cuanto a los cuerpos de agua, puesto que el SmileCart en este caso detecta mucho más los cuerpos de agua. Mientras que el RandomForest muestra más fácilmente las zonas boscosas y las zonas de cultivo.
@@ -233,32 +233,37 @@ Este algoritmo es capaz de manejar grandes cantidades de datos, además de poder
 
 ## Matrices 
 
-### Matriz de SmileCart
+### Matriz de smileCart
 ![image](https://github.com/margetmartinez/TP4-fotogrametr-a/blob/main/smileCart.jpeg)
 
 Validación de precisión general: 1
 
-### Matriz de RandomForest
+### Matriz de randomForest
 ![image](https://github.com/margetmartinez/TP4-fotogrametr-a/blob/main/randomforest.jpeg)
 
 Validación de precisión general: 0.996328350380278
 
-###  Síntesis de Ambas Matrices
+###  Síntesis de ambas
 Las matrices de confusión, según lo visto en clase, nos permiten conocer que tan preciso es un modelo de clasificación. Bajo esta lógica, al analizar ambas matrices el smileCart es el que muestra una mejor clasificación porque no ha confundido ninguna clase. Esto se ve reflejado, también, en el valor de validación con un 100% de precisión general. Sin embargo, el valor de validación para la matriz del clasificador randomForest es también alto, con un 99% de precisión general. 
 
-## Mapas Finales
+## Mapas finales
 
 ![image](https://github.com/margetmartinez/TP4-fotogrametr-a/blob/main/MapaFinal_smileCart.png)
 ![image](https://github.com/margetmartinez/TP4-fotogrametr-a/blob/main/randomForestmapa.png)
 
 ## Conclusiones
 
-Este trabajo práctico ejemplifica uno de los infinitos usos del Machine Learning, tanto para la teledetección como para la geografía. Incluso el uso de esta ciencia de la computación en otras distintas áreas y disciplinas. Ya que es una herramienta que facilita el análisis y procesamiento de datos.
+Este trabajo práctico ejemplifica uno de los infinitos usos del Machine Learning, tanto para la teledetección como para la geografía. Incluso el uso de esta ciencia de la computación en otras distintas áreas y disciplinas. Ya que es una herramienta que facilita el análisis y procesamiento de datos, mucho más cuando se trata de analizar o trabajar con una gran cantidad de estos. Definitivamente es de gran utilidad al momento de recopilar datos de áreas extensas.
 
-## Referencias Bibliográficas 
+En lo que respecta a los clasificadores, como se señaló en la comparación, hubo confusión entre ciertas clases (Suelos desnudos, Cultivos, Zonas urbanas). Lo que nos indica que faltó establecer más puntos de entrenamiento y hacer una mejor distribución para que el algoritmo realizara una mejor clasificación. Además, se debe tomar en cuenta que el escenario ideal para desarrollar y aplicar estos métodos de clasificación, es realizar previamente una visita a campo para conocer de primera mano dónde es mejor ubicar los puntos de entrenamiento y cruzar la información con lo que vemos en las imágenes satelitales.
 
-Brownlee, J. (8 abril, 2016). Classification And Regression Trees for Machine Learning. Machine Learnign Matery. https://machinelearningmastery.com/classification-and-regression-trees-for-machine-learning/ 
+A pesar de ello y como se vio anteriormente, el SmileCart fue el que presentó mayor precisión en comparación con el RandomForest, mostrando así que este algoritmo es muy útil y preciso si se trabaja en áreas extensas. Y finalmente con respecto a otra parte del ejercicio, se pueden utilizar los gráficos de firmas espectrales para analizar las bandas más adecuadas para analizar distintos tipos de clases o zonas del terreno. Con esto se puede trabajar con mayor precisión las zonas de estudio de acuerdo a su nivel de reflectancia.
 
-Gonzalez, L. (7 abril, 2018). Aprendizaje Supervisado: Random Forest Classification. Aprendizaje IA. https://aprendeia.com/aprendizaje-supervisado-random-forest-classification/
 
-Tarazona, J. (09 Septiembre, 2019). Algoritmos de machine learning en la Teledetección. APROGIS. https://aprogis.com/blogs/algoritmos-de-machine-learning-en-la-teledeteccion
+## Referencias bibliográficas 
+
+Brownlee, J. (8 abril, 2016). Classification And Regression Trees for Machine Learning. *Machine Learnign Matery*. https://machinelearningmastery.com/classification-and-regression-trees-for-machine-learning/ 
+
+Gonzalez, L. (7 abril, 2018). Aprendizaje Supervisado: Random Forest Classification. *Aprendizaje IA*. https://aprendeia.com/aprendizaje-supervisado-random-forest-classification/
+
+Tarazona, J. (09 Septiembre, 2019). Algoritmos de machine learning en la Teledetección. *APROGIS*. https://aprogis.com/blogs/algoritmos-de-machine-learning-en-la-teledeteccion
