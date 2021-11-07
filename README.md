@@ -237,3 +237,6 @@ Las matrices de confusión, según lo visto en clase, nos permiten conocer que t
 ## Conclusiones
 
 ## Referencias bibliográficas 
+
+Brownlee, J. (8 abril, 2016). Árboles de clasificación y regresión para el aprendizaje automático. Machine Learnign Matery. https://machinelearningmastery.com/classification-and-regression-trees-for-machine-learning/ 
+
