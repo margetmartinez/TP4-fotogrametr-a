@@ -3,6 +3,13 @@
 
 ## Introducción
 
+Para el desarrollo de este trabajo práctico n°4 es necesario conocer algunos conceptos que son claves, como el Machine Learning y las clasificaciones supervisadas. 
+
+El Machine Learning o aprendizaje automático, es un subcampo de las ciencias de la computación y una rama de la IA (Inteligencia Artificial) cuyo objetivo es que las computadoras adquieran conocimientos y mejoren su aprendizaje al proporcionarles datos y observaciones para que actúen y ejecuten acciones como humanos. Para lograr esto se necesita de datos estructurados tradicionales y de una persona que etiquete estos datos, para que el algoritmo utilizado en cada caso pueda reconocer características específicas de cada tipo o categoría y las identifique, por ejemplo, en otras imágenes. 
+
+En cuanto a las clasificaciones supervisadas, estas parten de un conjunto de clases conocido previamente. Estas clases establecidas se caracterizan en función del conjunto de variables mediante la medición de las mismas en individuos cuya pertenencia a una de las clases no genere incertidumbre. Estas son mejor conocidas como las áreas de entrenamiento. 
+
+
 ## Firmas espectrales
 
 ```
