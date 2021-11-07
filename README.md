@@ -131,7 +131,7 @@ print('Validación de error matrix: ', testAccuracy);
 print('Validación de precisión general: ', testAccuracy.accuracy());
 
 ```
-#Clasificador randomForest
+# Clasificador randomForest
 
 ```
 //Filtros y fechas
@@ -199,3 +199,5 @@ print('Validación de error matrix: ', testAccuracy);
 //
 print('Validación de precisión general: ', testAccuracy.accuracy());
 ```
+![image]()
+![image]()
