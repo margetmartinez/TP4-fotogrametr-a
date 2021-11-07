@@ -9,7 +9,7 @@ El Machine Learning o aprendizaje automático, es un subcampo de las ciencias de
 
 Y las Clasificaciones Supervisadas, parten de un conjunto de clases conocidas previamente. Estas clases establecidas se caracterizan en función del conjunto de variables mediante la medición de las mismas en individuos cuya pertenencia a una de las clases no genere incertidumbre. Estas son mejor conocidas como las áreas de entrenamiento.
 
-Ambas son muy útiles en el área de la teledetección, ya que estos algoritmos permiten modelar complejas firmas de clases. Por otro lado, permiten analizar una mayor cantidad de datos para poder realizar las predicciones y no suelen realizar suposiciones sobre la distribución de los datos. Son de gran utilidad debido a la gran precisión que tienen en comparación con clasificadores tradicionales, aún más cuando se trabaja con gran cantidad de variables. Este muestra un amyor dominio de paquetes de software de procesamiento de imágenes satelitales, mientras que los métodos convencionales necesitan un mayor desarrollo de software y capacitación.
+Ambas son muy útiles en el área de la teledetección, ya que estos algoritmos permiten modelar complejas firmas de clases. Por otro lado, permiten analizar una mayor cantidad de datos para poder realizar las predicciones y no suelen realizar suposiciones sobre la distribución de los datos. Son de gran utilidad debido a la gran precisión que tienen en comparación con clasificadores tradicionales, aún más cuando se trabaja con gran cantidad de variables. Este muestra un mayor dominio de paquetes de software de procesamiento de imágenes satelitales, mientras que los métodos convencionales necesitan un mayor desarrollo de software y capacitación.
 
 
 ## Firmas espectrales
