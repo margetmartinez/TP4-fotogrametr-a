@@ -64,7 +64,7 @@ print(Chart2);
 
 De acuerdo al gráfico "Landsat-8 Surface reflectance espectra, las clases "Sombra_Nube", "Bosque", "Cultivo" y "Urbano" presentan mayor absorción de longitud de onda que las demás variables entre los 500 y 750 nanómetros. Lo que indica que la banda roja es donde presentan una mayor absorción. Luego se puede observar como todas las clases aumentan su reflectancia (presentando los valores más grandes), justo en la banda de infrarrojo cercano, entre los 750 y 1000 nanómetros. La reflectancia vuelve a bajar para todas las clases en la banda infrarroja de onda corta 1 (1500-1750 nm), a excepción del "Suelo_Desnudo" que aumenta ligeramente. Por último, todas las clases bajan en la banda de infrarrojo de onda corta 2. En este caso, las clases que manejan una menor distorción son "Sombra_Nubes" y "Cuerpos_Agua".
 
-# Clasificador smileCart
+## Clasificador smileCart
 
 ```
 //Filtros y fechas
@@ -133,7 +133,7 @@ print('Validación de error matrix: ', testAccuracy);
 print('Validación de precisión general: ', testAccuracy.accuracy());
 
 ```
-# Clasificador randomForest
+## Clasificador randomForest
 
 ```
 //Filtros y fechas
@@ -202,33 +202,33 @@ print('Validación de error matrix: ', testAccuracy);
 print('Validación de precisión general: ', testAccuracy.accuracy());
 ```
 
-# Descripción de los clasificadores
+## Descripción de los clasificadores
 
 segwsgrdgreh
 
-# smileCart vs randomForest
+## smileCart vs randomForest
 sdfwefw
 
-# Matrices 
+## Matrices 
 
-## Matriz de smileCart
+### Matriz de smileCart
 ![image](https://github.com/margetmartinez/TP4-fotogrametr-a/blob/main/smileCart.jpeg)
 
 Validación de precisión general: 1
 
-## Matriz de randomForest
+### Matriz de randomForest
 ![image](https://github.com/margetmartinez/TP4-fotogrametr-a/blob/main/randomforest.jpeg)
 
 Validación de precisión general: 0.996328350380278
 
-##  Síntesis de ambas
+###  Síntesis de ambas
 Las matrices de confusión, según lo visto en clase, nos permiten conocer que tan preciso es un modelo de clasificación. Bajo esta lógica, al analizar ambas matrices el smileCart es el que muestra una mejor clasificación porque no ha confundido ninguna clase. Esto se ve reflejado, también, en el valor de validación con un 100% de precisión general. Sin embargo, el valor de validación para la matriz del clasificador randomForest es también alto, con un 99% de precisión general. 
 
-# Mapas finales
+## Mapas finales
 
 ![image](https://github.com/margetmartinez/TP4-fotogrametr-a/blob/main/MapaFinal_smileCart.png)
 ![image](https://github.com/margetmartinez/TP4-fotogrametr-a/blob/main/randomForestmapa.png)
 
-# Conclusiones
+## Conclusiones
 
-# Referencias Bibliográficas 
+## Referencias Bibliográficas 
