@@ -243,6 +243,8 @@ Las matrices de confusión, según lo visto en clase, nos permiten conocer que t
 
 ## Conclusiones
 
+Este trabajo práctico ejemplifica uno de los infinitos usos del Machine Learning, tanto para la teledetección como para la geografía. Incluso el uso de esta ciencia de la computación en otras distintas áreas y disciplinas. Ya que es una herramienta que facilita el análisis y procesamiento de datos.
+
 ## Referencias bibliográficas 
 
 Brownlee, J. (8 abril, 2016). Classification And Regression Trees for Machine Learning. Machine Learnign Matery. https://machinelearningmastery.com/classification-and-regression-trees-for-machine-learning/ 
