@@ -227,6 +227,6 @@ Las matrices de confusión, según lo visto en clase, nos permiten conocer que t
 ![image](https://github.com/margetmartinez/TP4-fotogrametr-a/blob/main/MapaFinal_smileCart.png)
 ![image](https://github.com/margetmartinez/TP4-fotogrametr-a/blob/main/randomForestmapa.png)
 
-# Conclusión
+# Conclusiones
 
 # Referencias Bibliográficas 
