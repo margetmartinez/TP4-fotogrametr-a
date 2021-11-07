@@ -199,5 +199,5 @@ print('Validación de error matrix: ', testAccuracy);
 //
 print('Validación de precisión general: ', testAccuracy.accuracy());
 ```
-![image]()
+![image](https://github.com/margetmartinez/TP4-fotogrametr-a/blob/main/smileCart.jpeg)
 ![image](https://github.com/margetmartinez/TP4-fotogrametr-a/blob/main/randomforest.jpeg)
