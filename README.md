@@ -5,9 +5,11 @@
 
 Para el desarrollo de este Trabajo Práctico N°4 es necesario conocer algunos conceptos que son claves, como el Machine Learning y las clasificaciones supervisadas. 
 
-El Machine Learning o aprendizaje automático, es un subcampo de las ciencias de la computación y una rama de la IA (Inteligencia Artificial) cuyo objetivo es que las computadoras adquieran conocimientos y mejoren su aprendizaje al proporcionarles datos y observaciones para que actúen y ejecuten acciones como humanos. Para lograr esto se necesita de datos estructurados tradicionales y de una persona que etiquete estos datos, para que el algoritmo utilizado en cada caso pueda reconocer características específicas de cada tipo o categoría y las identifique, por ejemplo, en otras imágenes. 
+Las clasificaciones supervisadas, estas parten de un conjunto de clases conocido previamente. Estas clases establecidas se caracterizan en función del conjunto de variables mediante la medición de las mismas en individuos cuya pertenencia a una de las clases no genere incertidumbre. Estas son mejor conocidas como las áreas de entrenamiento.
 
-En cuanto a las clasificaciones supervisadas, estas parten de un conjunto de clases conocido previamente. Estas clases establecidas se caracterizan en función del conjunto de variables mediante la medición de las mismas en individuos cuya pertenencia a una de las clases no genere incertidumbre. Estas son mejor conocidas como las áreas de entrenamiento. 
+En cuanto al Machine Learning o aprendizaje automático, es un subcampo de las ciencias de la computación y una rama de la IA (Inteligencia Artificial) cuyo objetivo es que las computadoras adquieran conocimientos y mejoren su aprendizaje al proporcionarles datos y observaciones para que actúen y ejecuten acciones como humanos. Para lograr esto se necesita de datos estructurados tradicionales y de una persona que etiquete estos datos, para que el algoritmo utilizado en cada caso pueda reconocer características específicas de cada tipo o categoría y las identifique, por ejemplo, en otras imágenes. 
+
+Este es muy útil en el área de la teledetección, ya que estos algoritmos permiten modelar complejas firmas de clases. Por otro lado, permiten analizar una mayor cantidad de datos para poder realizar las predicciones y no suelen realizar suposiciones sobre la distribución de los datos. Son de gran utilidad debido a la gran precisión que tienen en comparación con clasificadores tradicionales, aún más cuando se trabaja con gran cantidad de variables. Este muestra un amyor dominio de paquetes de software de procesamiento de imágenes satelitales, mientras que los métodos convencionales necesitan un mayor desarrollo de software y capacitación.
 
 
 ## Firmas espectrales
