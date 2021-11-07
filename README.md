@@ -255,3 +255,5 @@ Este trabajo práctico ejemplifica uno de los infinitos usos del Machine Learnin
 Brownlee, J. (8 abril, 2016). Classification And Regression Trees for Machine Learning. Machine Learnign Matery. https://machinelearningmastery.com/classification-and-regression-trees-for-machine-learning/ 
 
 Gonzalez, L. (7 abril, 2018). Aprendizaje Supervisado: Random Forest Classification. Aprendizaje IA. https://aprendeia.com/aprendizaje-supervisado-random-forest-classification/
+
+Tarazona, J. (09 Septiembre, 2019). Algoritmos de machine learning en la Teledetección. APROGIS. https://aprogis.com/blogs/algoritmos-de-machine-learning-en-la-teledeteccion
