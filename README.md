@@ -219,7 +219,7 @@ Como lo vimos en clase, en el caso del clasificador SmileCart que es una clasifi
 ### 2. RandomForest
 Por otro lado, el clasificador RandomForest es un método que se encarga tanto de la clasificación como la regresión. También se encarga de realizar métodos de reducción dimensional, valores perdidos, valores atípicos y otros pasos esenciales de exploración de datos. Es un modelo en el que se realiza un conjunto de modelos débiles que forman uno más fuerte. En este clasificador se llegan a ejecutar varios algoritmos de árboles de decisión, cuando en otros clasificadores se ejecuta sólo uno. Al utilizar varios árboles, cada uno da una clasificación, y el que contenga la "mejor", será la que se decida al final como la predicción del algoritmo (Gonzalez, 2018).
 
-Este algoritmo es capaz de manejar grandes cantidades de datos, además de poder manejar gran cantidad de variables, las cuales puede clasificarlas entre las más significativas para poder reducir su dimensionalidad. Por otro lado, también puede clasificar la importancia de la variable. También es muy efectivo debido al hecho de que mantiene la precisión cuando faltan muchos datos.
+Este algoritmo es capaz de manejar grandes cantidades de datos, además de poder manejar gran cantidad de variables, las cuales puede clasificarlas entre las más significativas para poder reducir su dimensionalidad. Por otro lado, también puede clasificar la importancia de la variable. También es muy efectivo debido al hecho de que mantiene la precisión cuando faltan muchos datos (Gonzalez, 2018).
 
 ## smileCart vs randomForest
 sdfwefw
