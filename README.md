@@ -73,7 +73,7 @@ print(Chart2);
 
 De acuerdo al gráfico "Landsat-8 Surface reflectance espectra, las clases "Sombra_Nube", "Bosque", "Cultivo" y "Urbano" presentan mayor absorción de longitud de onda que las demás variables entre los 500 y 750 nanómetros. Lo que indica que la banda roja es donde presentan una mayor absorción. Luego se puede observar como todas las clases aumentan su reflectancia (presentando los valores más grandes), justo en la banda de infrarrojo cercano, entre los 750 y 1000 nanómetros. La reflectancia vuelve a bajar para todas las clases en la banda infrarroja de onda corta 1 (1500-1750 nm), a excepción del "Suelo_Desnudo" que aumenta ligeramente. Por último, todas las clases bajan en la banda de infrarrojo de onda corta 2. En este caso, las clases que manejan una menor distorción son "Sombra_Nubes" y "Cuerpos_Agua".
 
-## Clasificador smileCart
+## Clasificador SmileCart
 
 ```
 //Filtros y fechas
@@ -118,7 +118,7 @@ Map.addLayer(final,
 'classification');
 
 
-Código Matriz de Confusión
+#### Código Matriz de Confusión
 
 //Matriz Confusión
 
@@ -142,7 +142,7 @@ print('Validación de error matrix: ', testAccuracy);
 print('Validación de precisión general: ', testAccuracy.accuracy());
 
 ```
-## Clasificador randomForest
+## Clasificador RandomForest
 
 ```
 //Filtros y fechas
