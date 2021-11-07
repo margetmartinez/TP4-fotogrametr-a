@@ -209,10 +209,12 @@ sdfwefw
 
 ## Matriz de smileCart
 ![image](https://github.com/margetmartinez/TP4-fotogrametr-a/blob/main/smileCart.jpeg)
+
 Validación de precisión general: 1
 
 ## Matriz de randomForest
 ![image](https://github.com/margetmartinez/TP4-fotogrametr-a/blob/main/randomforest.jpeg)
+
 Validación de precisión general: 0.996328350380278
 
 # Mapas finales
