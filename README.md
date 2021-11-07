@@ -204,7 +204,10 @@ print('Validación de precisión general: ', testAccuracy.accuracy());
 
 ## Descripción de los clasificadores
 
-segwsgrdgreh
+### 1. SmileCart
+El clasificador SmileCart forma parte del grupo llamado Classification and Regression Trees o CART, conocidos en español como Árboles de Clasificación y Decisión. Estos son algoritmos de árbol de decisión que se usan para problemas de modelado predictivo de clasificación o regresión. Este proporciona una base para algoritmos importantes como árboles de decisión empaquetados, bosque aleatorio y árboles de decisión potenciados. Para representar este modelo se usa un árbol binario. Para crear un modelo CART se deben seleccionar variables de entrada y puntos de división en esas variables hasta que se construya un árbol adecuado (Brownlee, 2006). 
+Como lo vimos en clase, en el caso del clasificador SmileCart que es una clasificación supervisada, necesitará de áreas o puntos de entrenamiento de los tipos de cobertura para que pueda ajustar de una manera correcta los parámetros que utiliza. Para que posteriormente identifique y etiquete de manera automática cada área con características similares a las áreas de entrenamiento preestablecidas. 
+
 
 ## smileCart vs randomForest
 sdfwefw
