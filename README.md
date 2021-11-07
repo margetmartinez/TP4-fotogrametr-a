@@ -217,6 +217,7 @@ El clasificador smileCart forma parte del grupo llamado Classification and Regre
 Como lo vimos en clase, en el caso del clasificador SmileCart que es una clasificación supervisada, necesitará de áreas o puntos de entrenamiento de los tipos de cobertura para que pueda ajustar de una manera correcta los parámetros que utiliza. Para que posteriormente identifique y etiquete de manera automática cada área con características similares a las áreas de entrenamiento preestablecidas. 
 
 ### 2. RandomForest
+Por otro lado, el clasificador RandomForest es un método que se encarga tanto de la clasificación como la regresión. También se encarga de realizar métodos de reducción dimensional, valores perdidos, valores atípicos y otros pasos esenciales de exploración de datos. Es un modelo en el que se realiza un conjunto de modelos débiles que forman uno más fuerte. En este clasificador se llegan a ejecutar varios algoritmos de árboles de decisión, cuando en otros clasificadores se ejecuta sólo uno. Al utilizar varios árboles, cada uno da una clasificación, y el que contenga la "mejor", será la que se decida al final como la predicción del algoritmo (Gonzalez, 2018).
 
 ## smileCart vs randomForest
 sdfwefw
@@ -249,3 +250,4 @@ Este trabajo práctico ejemplifica uno de los infinitos usos del Machine Learnin
 
 Brownlee, J. (8 abril, 2016). Classification And Regression Trees for Machine Learning. Machine Learnign Matery. https://machinelearningmastery.com/classification-and-regression-trees-for-machine-learning/ 
 
+Gonzalez, L. (7 abril, 2018). Aprendizaje Supervisado: Random Forest Classification. Aprendizaje IA. https://aprendeia.com/aprendizaje-supervisado-random-forest-classification/
