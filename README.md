@@ -1,9 +1,9 @@
 # TP4 Fotogrametría y Teledetección
-## Elaborado por: Daniela Amador y Marget Martínez
+### Elaborado por: Daniela Amador y Marget Martínez
 
-# Introducción
+## Introducción
 
-# Firmas espectrales
+##Firmas espectrales
 
 ```
 //Filtros y fechas
