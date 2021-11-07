@@ -219,4 +219,5 @@ Validación de precisión general: 0.996328350380278
 
 # Mapas finales
 
+![image](https://github.com/margetmartinez/TP4-fotogrametr-a/blob/main/MapaFinal_smileCart.png)
 ![image](https://github.com/margetmartinez/TP4-fotogrametr-a/blob/main/randomForestmapa.png)
